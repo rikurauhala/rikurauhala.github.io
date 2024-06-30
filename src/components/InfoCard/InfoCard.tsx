@@ -1,5 +1,5 @@
-import Box from '@mui/joy/Box'
 import Card from '@mui/joy/Card'
+import Divider from '@mui/joy/Divider'
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 
@@ -8,13 +8,15 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PlaceIcon from '@mui/icons-material/Place'
 import WorkIcon from '@mui/icons-material/Work'
 
+import { InfoItem } from '~/types'
+
 import InfoItems from './InfoItems'
 import ProfilePicture from './ProfilePicture'
 
 const InfoCard = (): JSX.Element => {
   const name = 'Riku Rauhala'
 
-  const aboutItems = [
+  const aboutItems: InfoItem[] = [
     {
       key: 'profession',
       title: 'Profession',
@@ -56,11 +58,29 @@ const InfoCard = (): JSX.Element => {
         <ProfilePicture />
         <Stack direction="column" justifyContent="space-between" spacing={2} textAlign="left">
           <Typography component="h1" level="h4" textAlign={{ xs: 'center', sm: 'left' }}>
-            <Box>{name}</Box>
+            {name}
           </Typography>
-          <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent="space-between" spacing={4}>
-            <InfoItems header="About" items={aboutItems} />
-            <InfoItems header="Online" items={onlineItems} />
+          <Stack
+            direction={{ xs: 'column', sm: 'row' }}
+            spacing={{ xs: 2, sm: 4 }}
+            alignItems="flex-start"
+          >
+            <InfoItems items={aboutItems} />
+            <Divider
+              orientation="horizontal"
+              sx={{
+                display: { xs: 'block', sm: 'none' },
+                width: '100%',
+              }}
+            />
+            <Divider
+              orientation="vertical"
+              sx={{
+                display: { xs: 'none', sm: 'block' },
+                height: 'auto',
+              }}
+            />
+            <InfoItems items={onlineItems} />
           </Stack>
         </Stack>
       </Stack>

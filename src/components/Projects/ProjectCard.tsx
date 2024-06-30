@@ -29,7 +29,15 @@ const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
                 justifyContent: 'center',
               }}
             >
-              <ImageIcon sx={{ color: 'white', fontSize: 30 }} />
+              {project.image ? (
+                <img
+                  alt={project.name}
+                  src={`img/projects/${project.image}`}
+                  style={{ width: '65%', height: 'auto' }}
+                />
+              ) : (
+                <ImageIcon sx={{ color: 'white', fontSize: 30 }} />
+              )}
             </Box>
           </AspectRatio>
         </CardOverflow>

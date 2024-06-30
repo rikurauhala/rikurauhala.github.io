@@ -9,7 +9,7 @@ import Grid from '@mui/joy/Grid'
 import Typography from '@mui/joy/Typography'
 import ImageIcon from '@mui/icons-material/Image'
 
-import { Project } from '../../types'
+import { Project } from '~/types'
 
 interface ProjectCardProps {
   project: Project

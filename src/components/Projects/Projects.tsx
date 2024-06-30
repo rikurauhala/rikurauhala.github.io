@@ -1,6 +1,6 @@
 import Grid from '@mui/joy/Grid'
 
-import { Project } from '../../types'
+import { Project } from '~/types'
 import ProjectCard from './ProjectCard'
 
 const Projects = (): JSX.Element => {

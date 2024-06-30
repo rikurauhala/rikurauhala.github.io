@@ -21,29 +21,42 @@ const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
       <Card variant="outlined" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
         <CardOverflow>
           <AspectRatio ratio="2">
-            <Box>
-              <ImageIcon sx={{ fontSize: 30 }} />
+            <Box
+              sx={{
+                alignItems: 'center',
+                background: 'linear-gradient(45deg, #FFC371 0%, #FF5F6D 100%)',
+                display: 'flex',
+                justifyContent: 'center',
+              }}
+            >
+              <ImageIcon sx={{ color: 'white', fontSize: 30 }} />
             </Box>
           </AspectRatio>
         </CardOverflow>
         <CardContent sx={{ flexGrow: 1 }}>
-          <Typography level="title-md">{project.name}</Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <Typography level="title-md">{project.name}</Typography>
+            <Typography color="neutral" level="body-sm">
+              {project.duration}
+            </Typography>
+          </Box>
           <Typography level="body-sm">{project.description}</Typography>
         </CardContent>
-        <CardOverflow variant="soft" sx={{ bgcolor: 'background.level1' }}>
+        <CardOverflow variant="soft">
           <Divider inset="context" />
           <CardContent orientation="horizontal">
             <Box sx={{ display: 'flex', gap: 1, width: '100%' }}>
               <Button
-                component="a"
                 color="neutral"
-                variant="outlined"
+                component="a"
                 href={`https://github.com/${project.repository}`}
                 sx={{ flex: 1 }}
+                target="_blank"
+                variant="outlined"
               >
                 View source
               </Button>
-              <Button color="primary" variant="solid" sx={{ flex: 1 }}>
+              <Button color="primary" sx={{ flex: 1 }} variant="solid">
                 Read more
               </Button>
             </Box>

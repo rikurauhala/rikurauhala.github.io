@@ -59,6 +59,7 @@ const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
                 component="a"
                 href={`https://github.com/${project.repository}`}
                 sx={{ flex: 1 }}
+                rel="noopener noreferrer"
                 target="_blank"
                 variant="outlined"
               >

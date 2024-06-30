@@ -1,3 +1,4 @@
+import Box from '@mui/joy/Box'
 import Card from '@mui/joy/Card'
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
@@ -8,24 +9,50 @@ import WorkIcon from '@mui/icons-material/Work'
 import ProfilePicture from './ProfilePicture'
 
 const InfoCard = (): JSX.Element => {
+  const name = 'Riku Rauhala'
+
+  const infoItems = [
+    {
+      key: 'profession',
+      title: 'Profession',
+      icon: <WorkIcon />,
+      value: 'Software developer',
+    },
+    {
+      key: 'location',
+      title: 'Location',
+      icon: <PlaceIcon />,
+      value: 'Helsinki',
+    },
+  ]
+
   return (
     <Card>
-      <Stack alignItems="center" my={2} spacing={2}>
+      <Stack
+        alignItems="center"
+        direction={{ xs: 'column', sm: 'row' }}
+        justifyContent="center"
+        my={2}
+        spacing={4}
+      >
         <ProfilePicture />
-        <Typography component="h1" level="h1">
-          Riku Rauhala
-        </Typography>
-        <Stack alignItems="center">
-          <Typography component="h2" level="h4" startDecorator={<WorkIcon sx={{ fontSize: 20 }} />}>
-            Software Developer
+        <Stack direction="column" justifyContent="space-between" spacing={1} textAlign="left">
+          <Typography component="h1" level="h4">
+            <Box>{name}</Box>
           </Typography>
-          <Typography
-            component="h2"
-            level="h4"
-            startDecorator={<PlaceIcon sx={{ fontSize: 20 }} />}
-          >
-            Helsinki
-          </Typography>
+          {infoItems.map(({ key, title, icon, value }) => (
+            <Stack key={key} alignItems="center" direction="row" spacing={1.5}>
+              {icon}
+              <Stack alignItems="start" direction="column">
+                <Typography color="neutral" level="title-sm">
+                  {title}
+                </Typography>
+                <Typography>
+                  <Box>{value}</Box>
+                </Typography>
+              </Stack>
+            </Stack>
+          ))}
         </Stack>
       </Stack>
     </Card>

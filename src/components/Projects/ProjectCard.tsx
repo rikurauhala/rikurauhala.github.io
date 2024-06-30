@@ -24,7 +24,7 @@ const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
             <Box
               sx={{
                 alignItems: 'center',
-                background: 'linear-gradient(45deg, #FFC371 0%, #FF5F6D 100%)',
+                background: project.background,
                 display: 'flex',
                 justifyContent: 'center',
               }}

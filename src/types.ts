@@ -4,4 +4,5 @@ export interface Project {
   description: string
   repository: string
   duration: string
+  background: string
 }

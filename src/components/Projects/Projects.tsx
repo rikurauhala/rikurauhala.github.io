@@ -11,6 +11,7 @@ const Projects = (): JSX.Element => {
       description: 'A web application for analyzing university data',
       repository: 'UniversityOfHelsinkiCS/oodikone',
       duration: 'Jan 2024 - Present',
+      background: 'linear-gradient(45deg, #4dd0e1 0%, #4db6ac 100%)',
     },
     {
       key: 'insights',
@@ -18,6 +19,7 @@ const Projects = (): JSX.Element => {
       description: 'A fun, interactive web application for visualizing GitHub data',
       repository: 'rikurauhala/insights',
       duration: 'Apr 2024 - Present',
+      background: 'linear-gradient(45deg, #f06292 0%, #ba68c8 100%)',
     },
     {
       key: 'bsc-thesis',
@@ -25,6 +27,7 @@ const Projects = (): JSX.Element => {
       description: "Bachelor's thesis in computer science",
       repository: 'rikurauhala/kandi',
       duration: 'Aug 2023 - Dec 2023',
+      background: 'linear-gradient(45deg, #7986cb 0%, #64b5f6 100%)',
     },
     {
       key: 'hack-this',
@@ -32,6 +35,7 @@ const Projects = (): JSX.Element => {
       description: 'A web application demonstrating common security vulnerabilities',
       repository: 'rikurauhala/hack-this',
       duration: 'Jul 2023 - Aug 2023',
+      background: 'linear-gradient(45deg, #4fc3f7 0%, #90a4ae 100%)',
     },
   ]
 

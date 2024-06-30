@@ -18,7 +18,7 @@ const InfoItems = ({ header, items }: InfoItemsProps): JSX.Element => {
   return (
     <Box>
       <Typography component="h1" level="title-md" mb={1}>
-        <Box>{header}</Box>
+        {header}
       </Typography>
       {items.map(({ key, title, icon, value }) => (
         <Stack key={key} alignItems="center" direction="row" mt={1} spacing={1.5}>
@@ -27,9 +27,7 @@ const InfoItems = ({ header, items }: InfoItemsProps): JSX.Element => {
             <Typography color="neutral" level="title-sm">
               {title}
             </Typography>
-            <Typography>
-              <Box>{value}</Box>
-            </Typography>
+            <Typography>{value}</Typography>
           </Stack>
         </Stack>
       ))}

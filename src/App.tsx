@@ -1,17 +1,15 @@
-import Container from '@mui/material/Container'
-import CssBaseline from '@mui/material/CssBaseline'
-import ThemeProvider from '@mui/material/styles/ThemeProvider'
-
-import theme from './theme'
+import Container from '@mui/joy/Container'
+import CssBaseline from '@mui/joy/CssBaseline'
+import { CssVarsProvider } from '@mui/joy/styles'
 
 const App = (): JSX.Element => {
   return (
-    <ThemeProvider theme={theme}>
+    <CssVarsProvider defaultMode="dark">
       <CssBaseline />
       <Container maxWidth="md">
         <h1>Hello there!</h1>
       </Container>
-    </ThemeProvider>
+    </CssVarsProvider>
   )
 }
 

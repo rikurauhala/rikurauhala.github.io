@@ -3,15 +3,18 @@ import Card from '@mui/joy/Card'
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PlaceIcon from '@mui/icons-material/Place'
 import WorkIcon from '@mui/icons-material/Work'
 
+import InfoItems from './InfoItems'
 import ProfilePicture from './ProfilePicture'
 
 const InfoCard = (): JSX.Element => {
   const name = 'Riku Rauhala'
 
-  const infoItems = [
+  const aboutItems = [
     {
       key: 'profession',
       title: 'Profession',
@@ -26,6 +29,21 @@ const InfoCard = (): JSX.Element => {
     },
   ]
 
+  const onlineItems = [
+    {
+      key: 'gitHub',
+      title: 'GitHub',
+      icon: <GitHubIcon />,
+      value: 'rikurauhala',
+    },
+    {
+      key: 'linkedIn',
+      title: 'LinkedIn',
+      icon: <LinkedInIcon />,
+      value: 'rikurauhala',
+    },
+  ]
+
   return (
     <Card>
       <Stack
@@ -36,23 +54,14 @@ const InfoCard = (): JSX.Element => {
         spacing={4}
       >
         <ProfilePicture />
-        <Stack direction="column" justifyContent="space-between" spacing={1} textAlign="left">
-          <Typography component="h1" level="h4">
+        <Stack direction="column" justifyContent="space-between" spacing={2} textAlign="left">
+          <Typography component="h1" level="h4" textAlign={{ xs: 'center', sm: 'left' }}>
             <Box>{name}</Box>
           </Typography>
-          {infoItems.map(({ key, title, icon, value }) => (
-            <Stack key={key} alignItems="center" direction="row" spacing={1.5}>
-              {icon}
-              <Stack alignItems="start" direction="column">
-                <Typography color="neutral" level="title-sm">
-                  {title}
-                </Typography>
-                <Typography>
-                  <Box>{value}</Box>
-                </Typography>
-              </Stack>
-            </Stack>
-          ))}
+          <Stack direction={{ xs: 'column', sm: 'row' }} justifyContent="space-between" spacing={4}>
+            <InfoItems header="About" items={aboutItems} />
+            <InfoItems header="Online" items={onlineItems} />
+          </Stack>
         </Stack>
       </Stack>
     </Card>

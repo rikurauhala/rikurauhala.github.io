@@ -13,7 +13,7 @@ import { InfoItem } from '~/types'
 import InfoItems from './InfoItems'
 import ProfilePicture from './ProfilePicture'
 
-const InfoCard = (): JSX.Element => {
+const Info = (): JSX.Element => {
   const name = 'Riku Rauhala'
 
   const aboutItems: InfoItem[] = [
@@ -88,4 +88,4 @@ const InfoCard = (): JSX.Element => {
   )
 }
 
-export default InfoCard
+export default Info

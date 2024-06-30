@@ -44,7 +44,7 @@ const Projects = (): JSX.Element => {
     {
       key: 'oodikone',
       image: 'oodikone.png',
-      background: getLinearGradient(purple[level], pink[level]),
+      background: getLinearGradient(red[level], pink[level]),
       name: 'Oodikone',
       duration: 'Jan 2024 - Present',
       description: 'A web application for analyzing university data',
@@ -53,7 +53,7 @@ const Projects = (): JSX.Element => {
     {
       key: 'bsc-thesis',
       image: 'bsc-thesis.png',
-      background: getLinearGradient(brown[level], amber[level]),
+      background: getLinearGradient(purple[level], deepPurple[level]),
       name: 'B.Sc thesis',
       duration: 'Aug 2023 - Dec 2023',
       description: "Bachelor's thesis in computer science",
@@ -82,7 +82,7 @@ const Projects = (): JSX.Element => {
     {
       key: '0b-is',
       image: '0b-is.png',
-      background: getLinearGradient(purple[level], deepPurple[level]),
+      background: getLinearGradient(grey[level], blueGrey[level]),
       name: '0b.is',
       duration: 'Dec 2022 - Feb 2023',
       description:

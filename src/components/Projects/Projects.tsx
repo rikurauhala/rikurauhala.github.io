@@ -1,14 +1,41 @@
 import Grid from '@mui/joy/Grid'
+import {
+  amber,
+  blue,
+  blueGrey,
+  brown,
+  cyan,
+  deepOrange,
+  deepPurple,
+  green,
+  grey,
+  indigo,
+  lightBlue,
+  lightGreen,
+  lime,
+  orange,
+  pink,
+  purple,
+  red,
+  teal,
+  yellow,
+} from '@mui/material/colors'
 
 import { Project } from '~/types'
 import ProjectCard from './ProjectCard'
+
+const getLinearGradient = (color1: string, color2: string): string => {
+  return `linear-gradient(90deg, ${color1} 0%, ${color2} 80%)`
+}
+
+const level = 300
 
 const Projects = (): JSX.Element => {
   const projects: Project[] = [
     {
       key: 'insights',
       image: 'insights.png',
-      background: 'linear-gradient(45deg, #f06292 0%, #ba68c8 100%)',
+      background: getLinearGradient(teal[level], blue[level]),
       name: 'Insights',
       duration: 'Apr 2024 - Present',
       description: 'An interactive web application for visualizing GitHub data',
@@ -17,7 +44,7 @@ const Projects = (): JSX.Element => {
     {
       key: 'oodikone',
       image: 'oodikone.png',
-      background: 'linear-gradient(45deg, #4dd0e1 0%, #4db6ac 100%)',
+      background: getLinearGradient(purple[level], pink[level]),
       name: 'Oodikone',
       duration: 'Jan 2024 - Present',
       description: 'A web application for analyzing university data',
@@ -26,7 +53,7 @@ const Projects = (): JSX.Element => {
     {
       key: 'bsc-thesis',
       image: 'bsc-thesis.png',
-      background: 'linear-gradient(45deg, #7986cb 0%, #64b5f6 100%)',
+      background: getLinearGradient(brown[level], amber[level]),
       name: 'B.Sc thesis',
       duration: 'Aug 2023 - Dec 2023',
       description: "Bachelor's thesis in computer science",
@@ -35,7 +62,8 @@ const Projects = (): JSX.Element => {
     {
       key: 'hack-this',
       image: 'hack-this.png',
-      background: 'linear-gradient(45deg, #4fc3f7 0%, #90a4ae 100%)',
+      background: getLinearGradient(green[level], lightGreen[level]),
+
       name: 'Hack This',
       duration: 'Jul 2023 - Aug 2023',
       description: 'A web application demonstrating common security vulnerabilities',
@@ -44,7 +72,7 @@ const Projects = (): JSX.Element => {
     {
       key: 'berry-picker-tracker',
       image: 'berry-picker-tracker.png',
-      background: 'linear-gradient(45deg, #ba68c8 0%, #9575cd 100%)',
+      background: getLinearGradient(indigo[level], blue[level]),
       name: 'Berry Picker Tracker',
       duration: 'Jan 2023 - May 2023',
       description:
@@ -54,7 +82,7 @@ const Projects = (): JSX.Element => {
     {
       key: '0b-is',
       image: '0b-is.png',
-      background: 'linear-gradient(45deg, #4db6ac 0%, #4fc3f7 100%)',
+      background: getLinearGradient(purple[level], deepPurple[level]),
       name: '0b.is',
       duration: 'Dec 2022 - Feb 2023',
       description:

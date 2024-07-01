@@ -8,17 +8,28 @@ import Divider from '@mui/joy/Divider'
 import Grid from '@mui/joy/Grid'
 import Typography from '@mui/joy/Typography'
 import ImageIcon from '@mui/icons-material/Image'
+import { animated, SpringValue } from '@react-spring/web'
 
 import { Project } from '~/types'
 
 interface ProjectCardProps {
   project: Project
+  style: {
+    opacity: SpringValue<number>
+    transform: SpringValue<string>
+  }
 }
 
-const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
+const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
+  const AnimatedCard = animated(Card)
+
   return (
     <Grid xs={12} sm={6} sx={{ display: 'flex' }}>
-      <Card variant="outlined" sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+      <AnimatedCard
+        variant="outlined"
+        sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}
+        style={style}
+      >
         <CardOverflow>
           <AspectRatio ratio="2">
             <Box
@@ -71,7 +82,7 @@ const ProjectCard = ({ project }: ProjectCardProps): JSX.Element => {
             </Box>
           </CardContent>
         </CardOverflow>
-      </Card>
+      </AnimatedCard>
     </Grid>
   )
 }

@@ -15,7 +15,7 @@ const Footer = (): JSX.Element => {
   ]
 
   return (
-    <Card sx={{ marginTop: 2, padding: 2 }} variant="soft">
+    <Card sx={{ padding: 2 }} variant="soft">
       <Stack direction="row" justifyContent="space-evenly" spacing={1} textAlign="center">
         {items.map(({ key, text, url }) => (
           <HyperLink key={key} href={url} text={text} />

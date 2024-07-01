@@ -12,7 +12,7 @@ const App = (): JSX.Element => {
     <CssVarsProvider defaultMode="dark">
       <CssBaseline />
       <Container maxWidth="md">
-        <Stack marginBottom={2} marginTop={2}>
+        <Stack gap={2} marginBottom={2} marginTop={2}>
           <Info />
           <Projects />
           <Footer />

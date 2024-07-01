@@ -13,7 +13,7 @@ const Projects = (): JSX.Element => {
   })
 
   return (
-    <Grid container marginTop={2} spacing={2}>
+    <Grid container spacing={2}>
       {trail.map((style, index) => (
         <ProjectCard key={projects[index].key} project={projects[index]} style={style} />
       ))}

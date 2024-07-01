@@ -44,7 +44,7 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
                 <img
                   alt={project.name}
                   src={`img/projects/${project.image}`}
-                  style={{ width: '65%', height: 'auto' }}
+                  style={{ width: '100%', height: 'auto' }}
                 />
               ) : (
                 <ImageIcon sx={{ color: 'white', fontSize: 30 }} />

@@ -3,50 +3,11 @@ import Divider from '@mui/joy/Divider'
 import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import PlaceIcon from '@mui/icons-material/Place'
-import WorkIcon from '@mui/icons-material/Work'
-
-import HyperLink from '~/components/HyperLink'
-import { InfoItem } from '~/types'
-
+import { aboutItems, name, onlineItems } from '~/content/info'
 import InfoItems from './InfoItems'
 import ProfilePicture from './ProfilePicture'
 
 const Info = (): JSX.Element => {
-  const name = 'Riku Rauhala'
-
-  const aboutItems: InfoItem[] = [
-    {
-      key: 'profession',
-      title: 'Profession',
-      icon: <WorkIcon />,
-      value: 'Software developer',
-    },
-    {
-      key: 'location',
-      title: 'Location',
-      icon: <PlaceIcon />,
-      value: 'Helsinki',
-    },
-  ]
-
-  const onlineItems = [
-    {
-      key: 'gitHub',
-      title: 'GitHub',
-      icon: <GitHubIcon />,
-      value: <HyperLink href="https://github.com/rikurauhala" text="rikurauhala" />,
-    },
-    {
-      key: 'linkedIn',
-      title: 'LinkedIn',
-      icon: <LinkedInIcon />,
-      value: <HyperLink href="https://linkedin.com/in/rikurauhala" text="rikurauhala" />,
-    },
-  ]
-
   return (
     <Card>
       <Stack

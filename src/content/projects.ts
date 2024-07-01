@@ -1,38 +1,11 @@
-import {
-  amber,
-  blue,
-  blueGrey,
-  brown,
-  cyan,
-  deepOrange,
-  deepPurple,
-  green,
-  grey,
-  indigo,
-  lightBlue,
-  lightGreen,
-  lime,
-  orange,
-  pink,
-  purple,
-  red,
-  teal,
-  yellow,
-} from '@mui/material/colors'
-
 import { Project } from '~/types'
-
-const getLinearGradient = (color1: string, color2: string): string => {
-  return `linear-gradient(90deg, ${color1} 0%, ${color2} 80%)`
-}
-
-const level = 300
+import { colors, getLinearGradient } from '~/utils/color'
 
 export const projects: Project[] = [
   {
     key: 'insights',
     image: 'insights.png',
-    background: getLinearGradient(teal[level], blue[level]),
+    background: getLinearGradient(colors.teal, colors.blue),
     name: 'Insights',
     duration: 'Apr 2024 - Present',
     description: 'An interactive web application for visualizing GitHub data',
@@ -41,7 +14,7 @@ export const projects: Project[] = [
   {
     key: 'oodikone',
     image: 'oodikone.png',
-    background: getLinearGradient(red[level], pink[level]),
+    background: getLinearGradient(colors.red, colors.pink),
     name: 'Oodikone',
     duration: 'Jan 2024 - Present',
     description: 'A web application for analyzing university data',
@@ -50,7 +23,7 @@ export const projects: Project[] = [
   {
     key: 'bsc-thesis',
     image: 'bsc-thesis.png',
-    background: getLinearGradient(purple[level], deepPurple[level]),
+    background: getLinearGradient(colors.purple, colors.deepPurple),
     name: 'B.Sc thesis',
     duration: 'Aug 2023 - Dec 2023',
     description: "Bachelor's thesis in computer science",
@@ -59,7 +32,7 @@ export const projects: Project[] = [
   {
     key: 'hack-this',
     image: 'hack-this.png',
-    background: getLinearGradient(green[level], lightGreen[level]),
+    background: getLinearGradient(colors.green, colors.lightGreen),
     name: 'Hack This',
     duration: 'Jul 2023 - Aug 2023',
     description: 'A web application demonstrating common security vulnerabilities',
@@ -68,7 +41,7 @@ export const projects: Project[] = [
   {
     key: 'berry-picker-tracker',
     image: 'berry-picker-tracker.png',
-    background: getLinearGradient(indigo[level], blue[level]),
+    background: getLinearGradient(colors.indigo, colors.blue),
     name: 'Berry Picker Tracker',
     duration: 'Jan 2023 - May 2023',
     description:
@@ -78,7 +51,7 @@ export const projects: Project[] = [
   {
     key: '0b-is',
     image: '0b-is.png',
-    background: getLinearGradient(grey[level], blueGrey[level]),
+    background: getLinearGradient(colors.grey, colors.blueGrey),
     name: '0b.is',
     duration: 'Dec 2022 - Feb 2023',
     description:

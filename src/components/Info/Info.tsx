@@ -8,6 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PlaceIcon from '@mui/icons-material/Place'
 import WorkIcon from '@mui/icons-material/Work'
 
+import HyperLink from '~/components/HyperLink'
 import { InfoItem } from '~/types'
 
 import InfoItems from './InfoItems'
@@ -36,13 +37,13 @@ const Info = (): JSX.Element => {
       key: 'gitHub',
       title: 'GitHub',
       icon: <GitHubIcon />,
-      value: 'rikurauhala',
+      value: <HyperLink href="https://github.com/rikurauhala" text="rikurauhala" />,
     },
     {
       key: 'linkedIn',
       title: 'LinkedIn',
       icon: <LinkedInIcon />,
-      value: 'rikurauhala',
+      value: <HyperLink href="https://linkedin.com/in/rikurauhala" text="rikurauhala" />,
     },
   ]
 
@@ -60,11 +61,7 @@ const Info = (): JSX.Element => {
           <Typography component="h1" level="h4" textAlign={{ xs: 'center', sm: 'left' }}>
             {name}
           </Typography>
-          <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            spacing={{ xs: 2, sm: 4 }}
-            alignItems="flex-start"
-          >
+          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 2, sm: 4 }}>
             <InfoItems items={aboutItems} />
             <Divider
               orientation="horizontal"

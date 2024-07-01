@@ -6,7 +6,7 @@ interface HyperLinkProps {
 }
 
 const HyperLink = ({ href, text }: HyperLinkProps): JSX.Element => (
-  <Link color="neutral" href={href} rel="noopener noreferrer" target="_blank">
+  <Link href={href} rel="noopener noreferrer" target="_blank">
     {text}
   </Link>
 )

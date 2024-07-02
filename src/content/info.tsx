@@ -48,6 +48,6 @@ export const onlineItems = [
     icon: <EmailIcon />,
     key: 'email',
     title: 'Email',
-    value: <HyperLink href="mailto:" text="To be added" />,
+    value: <HyperLink href="mailto:" text="to be added" />,
   },
 ]

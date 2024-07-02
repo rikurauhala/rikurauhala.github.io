@@ -1,6 +1,8 @@
+import EmailIcon from '@mui/icons-material/Email'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PlaceIcon from '@mui/icons-material/Place'
+import SchoolIcon from '@mui/icons-material/School'
 import WorkIcon from '@mui/icons-material/Work'
 
 import HyperLink from '~/components/HyperLink'
@@ -14,6 +16,12 @@ export const aboutItems: InfoItem[] = [
     title: 'Profession',
     icon: <WorkIcon />,
     value: 'Software developer',
+  },
+  {
+    key: 'education',
+    title: 'Education',
+    icon: <SchoolIcon />,
+    value: 'B.Sc. in computer science',
   },
   {
     key: 'location',
@@ -35,5 +43,11 @@ export const onlineItems = [
     title: 'LinkedIn',
     icon: <LinkedInIcon />,
     value: <HyperLink href="https://linkedin.com/in/rikurauhala" text="rikurauhala" />,
+  },
+  {
+    icon: <EmailIcon />,
+    key: 'email',
+    title: 'Email',
+    value: <HyperLink href="mailto:" text="To be added" />,
   },
 ]

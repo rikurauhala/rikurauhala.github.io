@@ -3,6 +3,16 @@ import { colors, getLinearGradient } from '~/utils/color'
 
 export const projects: Project[] = [
   {
+    key: 'rauhala-io',
+    // image: 'rauhala-io.png',
+    background: getLinearGradient(colors.teal, colors.blue),
+    name: 'rauhala.io',
+    duration: 'Jan 2022 - Present',
+    description:
+      'A personal website showcasing my projects and skills, currently in its third iteration',
+    repository: 'rikurauhala/rikurauhala.github.io',
+  },
+  {
     key: 'insights',
     image: 'insights.png',
     background: getLinearGradient(colors.teal, colors.blue),
@@ -21,12 +31,22 @@ export const projects: Project[] = [
     repository: 'UniversityOfHelsinkiCS/oodikone',
   },
   {
+    key: 'seminar-paper',
+    // image: 'seminar-paper.png',
+    background: getLinearGradient(colors.purple, colors.deepPurple),
+    name: 'Seminar paper',
+    duration: 'Jan 2024 - Apr 2024',
+    description: 'A seminar paper on the topic of implementing multi-factor authentication',
+    repository: 'rikurauhala/seminar-paper',
+  },
+  {
     key: 'bsc-thesis',
     image: 'bsc-thesis.png',
     background: getLinearGradient(colors.purple, colors.deepPurple),
-    name: 'B.Sc thesis',
+    name: "Bachelor's thesis",
     duration: 'Aug 2023 - Dec 2023',
-    description: "Bachelor's thesis in computer science",
+    description:
+      "A bachelor's thesis in computer science on the topic of cracking cryptographic hashes of passwords",
     repository: 'rikurauhala/kandi',
   },
   {
@@ -57,5 +77,42 @@ export const projects: Project[] = [
     description:
       'An intuitive web application for quickly converting numbers between different bases',
     repository: 'rikurauhala/0b.is',
+  },
+  {
+    key: 'rsa',
+    // image: 'rsa.png',
+    background: getLinearGradient(colors.orange, colors.deepOrange),
+    name: 'RSA',
+    duration: 'Sep 2022 - Oct 2022',
+    description: 'An implementation of the RSA cryptosystem in Python',
+    repository: 'rikurauhala/rsa',
+  },
+  {
+    key: 'yesan',
+    // image: 'yesan.png',
+    background: getLinearGradient(colors.yellow, colors.amber),
+    name: 'Yesan',
+    duration: 'Mar 2022 - May 2022',
+    description: 'A desktop application for managing personal finances',
+    repository: 'rikurauhala/yesan',
+  },
+  {
+    key: 'tj-bot',
+    // image: 'tj-bot.png',
+    background: getLinearGradient(colors.blue, colors.lightBlue),
+    name: 'TJ-bot',
+    duration: 'Jun 2021 - Sep 2021',
+    description:
+      'A Discord bot for reminding your friends in the Finnish military how many morning they have left',
+    repository: 'rikurauhala/tj-bot',
+  },
+  {
+    key: 'film-review-app',
+    // image: 'film-review-app.png',
+    background: getLinearGradient(colors.teal, colors.cyan),
+    name: 'Film Review App',
+    duration: 'Mar 2021 - Jun 2021',
+    description: 'A web application for reading and writing film reviews',
+    repository: 'rikurauhala/film-review-app',
   },
 ]

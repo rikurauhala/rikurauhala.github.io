@@ -27,7 +27,7 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.red, colors.pink),
     name: 'Oodikone',
     duration: 'Jan 2024 - Present',
-    description: 'A web application for analyzing university data',
+    description: 'A full stack web application for analyzing university data',
     repository: 'UniversityOfHelsinkiCS/oodikone',
   },
   {
@@ -36,7 +36,8 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.purple, colors.deepPurple),
     name: 'Seminar paper',
     duration: 'Jan 2024 - Apr 2024',
-    description: 'A seminar paper on the topic of implementing multi-factor authentication',
+    description:
+      'An academic seminar paper on the topic of implementing multi-factor authentication',
     repository: 'rikurauhala/seminar-paper',
   },
   {
@@ -55,7 +56,7 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.green, colors.lightGreen),
     name: 'Hack This',
     duration: 'Jul 2023 - Aug 2023',
-    description: 'A web application demonstrating common security vulnerabilities',
+    description: 'A full stack web application demonstrating common security vulnerabilities',
     repository: 'rikurauhala/hack-this',
   },
   {
@@ -65,7 +66,7 @@ export const projects: Project[] = [
     name: 'Berry Picker Tracker',
     duration: 'Jan 2023 - May 2023',
     description:
-      'A mobile application for preventing berry pickers from getting lost in the Finnish forests',
+      'A full stack mobile application for preventing berry pickers from getting lost in the forest',
     repository: 'marjanpoimijat',
   },
   {
@@ -84,7 +85,7 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.orange, colors.deepOrange),
     name: 'RSA',
     duration: 'Sep 2022 - Oct 2022',
-    description: 'An implementation of the RSA cryptosystem in Python',
+    description: 'An implementation of the RSA cryptosystem with a command-line interface',
     repository: 'rikurauhala/rsa',
   },
   {
@@ -93,7 +94,8 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.yellow, colors.amber),
     name: 'Yesan',
     duration: 'Mar 2022 - May 2022',
-    description: 'A desktop application for managing personal finances',
+    description:
+      'A desktop application for managing personal finances with a graphical user interface',
     repository: 'rikurauhala/yesan',
   },
   {
@@ -112,7 +114,7 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.teal, colors.cyan),
     name: 'Film Review App',
     duration: 'Mar 2021 - Jun 2021',
-    description: 'A web application for reading and writing film reviews',
+    description: 'A full stack web application for reading and writing film reviews',
     repository: 'rikurauhala/film-review-app',
   },
 ]

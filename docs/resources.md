@@ -10,10 +10,12 @@ A collection of useful resources.
   - Workflow
     1. Choose a mockup from the three options
     2. Take a screenshot with the correct dimensions
+       - Use the _Responsive Design Mode_ on Firefox
     3. Upload to Mockuper
-    4. Disable reflection
+    4. Disable reflections
     5. Download the mockup
-    6. Edit in GIMP if necessary
+    6. Edit in GIMP
+       - Use dimensions `2000x1000`
   - Mockups used
     - [Laptop](https://mockuper.net/mockup/6UsieT-qo/macbook-pro-16) (`1440x900`)
     - [Laptop + phone](https://mockuper.net/mockup/1777/multiple-devices) (`1440x900`, `750x1334`)

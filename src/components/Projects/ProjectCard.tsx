@@ -11,8 +11,10 @@ import Typography from '@mui/joy/Typography'
 import ImageIcon from '@mui/icons-material/Image'
 import StarOutlineIcon from '@mui/icons-material/StarOutline'
 import { animated, SpringValue } from '@react-spring/web'
+import { css, keyframes } from '@emotion/react'
 
 import { Project } from '~/types'
+import { colors } from '~/utils/color'
 
 interface ProjectCardProps {
   project: Project
@@ -21,6 +23,25 @@ interface ProjectCardProps {
     transform: SpringValue<string>
   }
 }
+
+const gradient = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+`
+
+const effect = css`
+  background: linear-gradient(45deg, ${colors.yellow}, ${colors.orange}, ${colors.amber});
+  background-size: 200% 200%;
+  color: black;
+  animation: ${gradient} 5s linear infinite;
+`
 
 const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
   const AnimatedCard = animated(Card)
@@ -44,7 +65,11 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
                     margin: 1,
                   }}
                 >
-                  <Chip size="sm" startDecorator={<StarOutlineIcon />}>
+                  <Chip
+                    size="sm"
+                    startDecorator={<StarOutlineIcon sx={{ color: 'black' }} />}
+                    sx={effect}
+                  >
                     Featured
                   </Chip>
                 </Box>

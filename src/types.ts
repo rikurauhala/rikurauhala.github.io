@@ -13,4 +13,5 @@ export interface Project {
   duration: string
   description: string
   repository: string
+  featured: boolean
 }

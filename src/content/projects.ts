@@ -11,6 +11,7 @@ export const projects: Project[] = [
     description:
       'A personal website showcasing my projects and skills, currently in its third iteration',
     repository: 'rikurauhala/rikurauhala.github.io',
+    featured: false,
   },
   {
     key: 'insights',
@@ -20,6 +21,7 @@ export const projects: Project[] = [
     duration: 'Apr 2024 - Present',
     description: 'An interactive web application for visualizing GitHub data',
     repository: 'rikurauhala/insights',
+    featured: true,
   },
   {
     key: 'oodikone',
@@ -29,6 +31,7 @@ export const projects: Project[] = [
     duration: 'Jan 2024 - Present',
     description: 'A full stack web application for analyzing university data',
     repository: 'UniversityOfHelsinkiCS/oodikone',
+    featured: true,
   },
   {
     key: 'seminar-paper',
@@ -39,6 +42,7 @@ export const projects: Project[] = [
     description:
       'An academic seminar paper on the topic of implementing multi-factor authentication',
     repository: 'rikurauhala/seminar-paper',
+    featured: false,
   },
   {
     key: 'bsc-thesis',
@@ -49,6 +53,7 @@ export const projects: Project[] = [
     description:
       "A bachelor's thesis in computer science on the topic of cracking cryptographic hashes of passwords",
     repository: 'rikurauhala/kandi',
+    featured: false,
   },
   {
     key: 'hack-this',
@@ -58,6 +63,7 @@ export const projects: Project[] = [
     duration: 'Jul 2023 - Aug 2023',
     description: 'A full stack web application demonstrating common security vulnerabilities',
     repository: 'rikurauhala/hack-this',
+    featured: true,
   },
   {
     key: 'berry-picker-tracker',
@@ -68,6 +74,7 @@ export const projects: Project[] = [
     description:
       'A full stack mobile application for preventing berry pickers from getting lost in the forest',
     repository: 'marjanpoimijat',
+    featured: true,
   },
   {
     key: '0b-is',
@@ -78,6 +85,7 @@ export const projects: Project[] = [
     description:
       'An intuitive web application for quickly converting numbers between different bases',
     repository: 'rikurauhala/0b.is',
+    featured: true,
   },
   {
     key: 'rsa',
@@ -87,6 +95,7 @@ export const projects: Project[] = [
     duration: 'Sep 2022 - Oct 2022',
     description: 'An implementation of the RSA cryptosystem with a command-line interface',
     repository: 'rikurauhala/rsa',
+    featured: false,
   },
   {
     key: 'yesan',
@@ -96,6 +105,7 @@ export const projects: Project[] = [
     duration: 'Mar 2022 - May 2022',
     description: 'A GUI desktop application for managing personal finances',
     repository: 'rikurauhala/yesan',
+    featured: false,
   },
   {
     key: 'tj-bot',
@@ -106,6 +116,7 @@ export const projects: Project[] = [
     description:
       'A Discord bot for reminding your friends in the Finnish military how many morning they have left',
     repository: 'rikurauhala/tj-bot',
+    featured: false,
   },
   {
     key: 'film-review-app',
@@ -115,5 +126,6 @@ export const projects: Project[] = [
     duration: 'Mar 2021 - Jun 2021',
     description: 'A full stack web application for reading and writing film reviews',
     repository: 'rikurauhala/film-review-app',
+    featured: false,
   },
 ]

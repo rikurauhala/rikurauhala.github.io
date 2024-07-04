@@ -5,7 +5,7 @@ export const projects: Project[] = [
   {
     key: 'rauhala-io',
     image: 'rauhala-io.png',
-    background: getLinearGradient(colors.teal, colors.blue),
+    background: getLinearGradient(colors.amber, colors.orange),
     name: 'rauhala.io',
     duration: 'Jan 2022 - Present',
     description:

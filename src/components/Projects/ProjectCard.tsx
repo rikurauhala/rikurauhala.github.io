@@ -4,10 +4,12 @@ import Button from '@mui/joy/Button'
 import Card from '@mui/joy/Card'
 import CardContent from '@mui/joy/CardContent'
 import CardOverflow from '@mui/joy/CardOverflow'
+import Chip from '@mui/joy/Chip'
 import Divider from '@mui/joy/Divider'
 import Grid from '@mui/joy/Grid'
 import Typography from '@mui/joy/Typography'
 import ImageIcon from '@mui/icons-material/Image'
+import StarOutlineIcon from '@mui/icons-material/StarOutline'
 import { animated, SpringValue } from '@react-spring/web'
 
 import { Project } from '~/types'
@@ -32,6 +34,22 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
       >
         <CardOverflow>
           <AspectRatio ratio="2">
+            <Box sx={{ position: 'relative' }}>
+              {project.featured && (
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: 0,
+                    right: 0,
+                    margin: 1,
+                  }}
+                >
+                  <Chip size="sm" startDecorator={<StarOutlineIcon />}>
+                    Featured
+                  </Chip>
+                </Box>
+              )}
+            </Box>
             <Box
               sx={{
                 alignItems: 'center',

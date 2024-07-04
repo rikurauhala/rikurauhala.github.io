@@ -4,7 +4,7 @@ import { colors, getLinearGradient } from '~/utils/color'
 export const projects: Project[] = [
   {
     key: 'rauhala-io',
-    // image: 'rauhala-io.png',
+    image: 'rauhala-io.png',
     background: getLinearGradient(colors.teal, colors.blue),
     name: 'rauhala.io',
     duration: 'Jan 2022 - Present',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     key: 'seminar-paper',
-    // image: 'seminar-paper.png',
+    image: 'seminar-paper.png',
     background: getLinearGradient(colors.purple, colors.deepPurple),
     name: 'Seminar paper',
     duration: 'Jan 2024 - Apr 2024',
@@ -81,7 +81,7 @@ export const projects: Project[] = [
   },
   {
     key: 'rsa',
-    // image: 'rsa.png',
+    image: 'rsa.png',
     background: getLinearGradient(colors.orange, colors.deepOrange),
     name: 'RSA',
     duration: 'Sep 2022 - Oct 2022',
@@ -90,17 +90,16 @@ export const projects: Project[] = [
   },
   {
     key: 'yesan',
-    // image: 'yesan.png',
+    image: 'yesan.png',
     background: getLinearGradient(colors.yellow, colors.amber),
     name: 'Yesan',
     duration: 'Mar 2022 - May 2022',
-    description:
-      'A desktop application for managing personal finances with a graphical user interface',
+    description: 'A GUI desktop application for managing personal finances',
     repository: 'rikurauhala/yesan',
   },
   {
     key: 'tj-bot',
-    // image: 'tj-bot.png',
+    image: 'tj-bot.png',
     background: getLinearGradient(colors.blue, colors.lightBlue),
     name: 'TJ-bot',
     duration: 'Jun 2021 - Sep 2021',
@@ -110,7 +109,7 @@ export const projects: Project[] = [
   },
   {
     key: 'film-review-app',
-    // image: 'film-review-app.png',
+    image: 'film-review-app.png',
     background: getLinearGradient(colors.teal, colors.cyan),
     name: 'Film Review App',
     duration: 'Mar 2021 - Jun 2021',

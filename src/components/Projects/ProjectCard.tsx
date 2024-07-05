@@ -1,16 +1,16 @@
-import { css, keyframes } from '@emotion/react'
+import { keyframes } from '@emotion/react'
 import AspectRatio from '@mui/joy/AspectRatio'
 import Box from '@mui/joy/Box'
 import Button from '@mui/joy/Button'
 import Card from '@mui/joy/Card'
 import CardContent from '@mui/joy/CardContent'
 import CardOverflow from '@mui/joy/CardOverflow'
-import Chip from '@mui/joy/Chip'
 import Divider from '@mui/joy/Divider'
 import Grid from '@mui/joy/Grid'
 import Typography from '@mui/joy/Typography'
 import ImageIcon from '@mui/icons-material/Image'
 import StarOutlineIcon from '@mui/icons-material/StarOutline'
+import Tooltip from '@mui/joy/Tooltip'
 import { animated, SpringValue } from '@react-spring/web'
 
 import { Project } from '~/types'
@@ -36,13 +36,6 @@ const gradient = keyframes`
   }
 `
 
-const effect = css`
-  background: linear-gradient(45deg, ${colors.yellow}, ${colors.orange}, ${colors.amber});
-  background-size: 200% 200%;
-  color: black;
-  animation: ${gradient} 3s linear infinite;
-`
-
 const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
   const AnimatedCard = animated(Card)
 
@@ -60,18 +53,30 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
                 <Box
                   sx={{
                     position: 'absolute',
-                    top: 0,
-                    right: 0,
+                    top: 5,
+                    right: 5,
                     margin: 1,
                   }}
                 >
-                  <Chip
-                    size="sm"
-                    startDecorator={<StarOutlineIcon sx={{ color: 'black' }} />}
-                    sx={effect}
+                  <Tooltip
+                    arrow
+                    enterTouchDelay={0}
+                    placement="left"
+                    title="Featured"
+                    variant="plain"
                   >
-                    Featured
-                  </Chip>
+                    <StarOutlineIcon
+                      sx={{
+                        animation: `${gradient} 3s linear infinite`,
+                        background: `linear-gradient(45deg, ${colors.yellow}, ${colors.orange}, ${colors.amber})`,
+                        backgroundSize: '200% 200%',
+                        borderRadius: '50%',
+                        color: 'black',
+                        fontSize: '30px',
+                        padding: '3px',
+                      }}
+                    />
+                  </Tooltip>
                 </Box>
               )}
             </Box>

@@ -1,3 +1,4 @@
+import { css, keyframes } from '@emotion/react'
 import AspectRatio from '@mui/joy/AspectRatio'
 import Box from '@mui/joy/Box'
 import Button from '@mui/joy/Button'
@@ -11,7 +12,6 @@ import Typography from '@mui/joy/Typography'
 import ImageIcon from '@mui/icons-material/Image'
 import StarOutlineIcon from '@mui/icons-material/StarOutline'
 import { animated, SpringValue } from '@react-spring/web'
-import { css, keyframes } from '@emotion/react'
 
 import { Project } from '~/types'
 import { colors } from '~/utils/color'
@@ -40,7 +40,7 @@ const effect = css`
   background: linear-gradient(45deg, ${colors.yellow}, ${colors.orange}, ${colors.amber});
   background-size: 200% 200%;
   color: black;
-  animation: ${gradient} 5s linear infinite;
+  animation: ${gradient} 3s linear infinite;
 `
 
 const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {

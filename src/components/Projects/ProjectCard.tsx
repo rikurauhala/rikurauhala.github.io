@@ -1,7 +1,5 @@
-import ImageIcon from '@mui/icons-material/Image'
 import AspectRatio from '@mui/joy/AspectRatio'
 import Box from '@mui/joy/Box'
-import Button from '@mui/joy/Button'
 import Card from '@mui/joy/Card'
 import CardContent from '@mui/joy/CardContent'
 import CardOverflow from '@mui/joy/CardOverflow'
@@ -12,6 +10,9 @@ import { animated, SpringValue } from '@react-spring/web'
 
 import { Project } from '~/types'
 import FeaturedIcon from './FeaturedIcon'
+import ProjectImage from './ProjectImage'
+import ReadMoreButton from './ReadMoreButton'
+import ViewSourceButton from './ViewSourceButton'
 
 interface ProjectCardProps {
   project: Project
@@ -34,29 +35,14 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
         <CardOverflow>
           <AspectRatio ratio="2">
             {project.featured && <FeaturedIcon />}
-            <Box
-              sx={{
-                alignItems: 'center',
-                background: project.background,
-                display: 'flex',
-                justifyContent: 'center',
-              }}
-            >
-              {project.image ? (
-                <img
-                  alt={project.name}
-                  src={`img/projects/${project.image}`}
-                  style={{ width: '100%', height: 'auto' }}
-                />
-              ) : (
-                <ImageIcon sx={{ color: 'white', fontSize: 30 }} />
-              )}
-            </Box>
+            <ProjectImage project={project} />
           </AspectRatio>
         </CardOverflow>
         <CardContent sx={{ flexGrow: 1 }}>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Typography level="title-md">{project.name}</Typography>
+          <Box sx={{ alignItems: 'center', display: 'flex', justifyContent: 'space-between' }}>
+            <Typography component="h3" level="title-md">
+              {project.name}
+            </Typography>
             <Typography color="neutral" level="body-sm">
               {project.duration}
             </Typography>
@@ -65,23 +51,9 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
         </CardContent>
         <CardOverflow variant="soft">
           <Divider inset="context" />
-          <CardContent orientation="horizontal">
-            <Box sx={{ display: 'flex', gap: 1, width: '100%' }}>
-              <Button
-                color="neutral"
-                component="a"
-                href={`https://github.com/${project.repository}`}
-                sx={{ flex: 1 }}
-                rel="noopener noreferrer"
-                target="_blank"
-                variant="outlined"
-              >
-                View source
-              </Button>
-              <Button color="primary" sx={{ flex: 1 }} variant="solid">
-                Read more
-              </Button>
-            </Box>
+          <CardContent orientation="horizontal" sx={{ display: 'flex', gap: 1, width: '100%' }}>
+            <ViewSourceButton repository={project.repository} />
+            <ReadMoreButton />
           </CardContent>
         </CardOverflow>
       </AnimatedCard>

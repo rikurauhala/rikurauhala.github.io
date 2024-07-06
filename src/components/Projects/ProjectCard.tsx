@@ -1,4 +1,4 @@
-import { keyframes } from '@emotion/react'
+import ImageIcon from '@mui/icons-material/Image'
 import AspectRatio from '@mui/joy/AspectRatio'
 import Box from '@mui/joy/Box'
 import Button from '@mui/joy/Button'
@@ -8,13 +8,10 @@ import CardOverflow from '@mui/joy/CardOverflow'
 import Divider from '@mui/joy/Divider'
 import Grid from '@mui/joy/Grid'
 import Typography from '@mui/joy/Typography'
-import ImageIcon from '@mui/icons-material/Image'
-import StarOutlineIcon from '@mui/icons-material/StarOutline'
-import Tooltip from '@mui/joy/Tooltip'
 import { animated, SpringValue } from '@react-spring/web'
 
 import { Project } from '~/types'
-import { colors } from '~/utils/color'
+import FeaturedIcon from './FeaturedIcon'
 
 interface ProjectCardProps {
   project: Project
@@ -23,18 +20,6 @@ interface ProjectCardProps {
     transform: SpringValue<string>
   }
 }
-
-const gradient = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-`
 
 const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
   const AnimatedCard = animated(Card)
@@ -48,38 +33,7 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
       >
         <CardOverflow>
           <AspectRatio ratio="2">
-            <Box sx={{ position: 'relative' }}>
-              {project.featured && (
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    top: 5,
-                    right: 5,
-                    margin: 1,
-                  }}
-                >
-                  <Tooltip
-                    arrow
-                    enterTouchDelay={0}
-                    placement="left"
-                    title="Featured"
-                    variant="plain"
-                  >
-                    <StarOutlineIcon
-                      sx={{
-                        animation: `${gradient} 3s linear infinite`,
-                        background: `linear-gradient(45deg, ${colors.yellow}, ${colors.orange}, ${colors.amber})`,
-                        backgroundSize: '200% 200%',
-                        borderRadius: '50%',
-                        color: 'black',
-                        fontSize: '30px',
-                        padding: '3px',
-                      }}
-                    />
-                  </Tooltip>
-                </Box>
-              )}
-            </Box>
+            {project.featured && <FeaturedIcon />}
             <Box
               sx={{
                 alignItems: 'center',

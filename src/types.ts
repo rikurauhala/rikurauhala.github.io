@@ -1,7 +1,7 @@
 export interface InfoItem {
   key: string
-  title: string
   icon: JSX.Element
+  title: string
   value: string | JSX.Element
 }
 

@@ -11,14 +11,12 @@ interface InfoItemsProps {
 const InfoItems = ({ items }: InfoItemsProps): JSX.Element => {
   return (
     <Box>
-      {items.map(({ key, title, icon, value }) => (
+      {items.map(({ key, icon, title, value }) => (
         <Stack key={key} alignItems="center" direction="row" mt={1} spacing={1.5}>
           {icon}
           <Stack alignItems="start" direction="column">
-            <Typography color="neutral" level="title-sm">
-              {title}
-            </Typography>
-            <Typography>{value}</Typography>
+            <Typography level="body-xs">{title}</Typography>
+            <Typography level="body-md">{value}</Typography>
           </Stack>
         </Stack>
       ))}

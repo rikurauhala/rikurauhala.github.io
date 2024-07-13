@@ -13,20 +13,20 @@ export const name = 'Riku Rauhala'
 export const aboutItems: InfoItem[] = [
   {
     key: 'profession',
-    title: 'Profession',
     icon: <WorkIcon />,
+    title: 'Profession',
     value: 'Software developer',
   },
   {
     key: 'education',
-    title: 'Education',
     icon: <SchoolIcon />,
+    title: 'Education',
     value: 'B.Sc. in computer science',
   },
   {
     key: 'location',
-    title: 'Location',
     icon: <PlaceIcon />,
+    title: 'Location',
     value: 'Helsinki',
   },
 ]
@@ -34,19 +34,19 @@ export const aboutItems: InfoItem[] = [
 export const onlineItems = [
   {
     key: 'gitHub',
-    title: 'GitHub',
     icon: <GitHubIcon />,
+    title: 'GitHub',
     value: <HyperLink href="https://github.com/rikurauhala" text="rikurauhala" />,
   },
   {
     key: 'linkedIn',
-    title: 'LinkedIn',
     icon: <LinkedInIcon />,
+    title: 'LinkedIn',
     value: <HyperLink href="https://linkedin.com/in/rikurauhala" text="rikurauhala" />,
   },
   {
-    icon: <EmailIcon />,
     key: 'email',
+    icon: <EmailIcon />,
     title: 'Email',
     value: <HyperLink href="mailto:" text="to be added" />,
   },

@@ -53,7 +53,7 @@ export const projects: Project[] = [
     description:
       "A bachelor's thesis in computer science on the topic of cracking cryptographic hashes of passwords",
     repository: 'rikurauhala/kandi',
-    featured: false,
+    featured: true,
   },
   {
     key: 'hack-this',

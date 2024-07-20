@@ -5,6 +5,7 @@ import CardContent from '@mui/joy/CardContent'
 import CardOverflow from '@mui/joy/CardOverflow'
 import Divider from '@mui/joy/Divider'
 import Grid from '@mui/joy/Grid'
+import Stack from '@mui/joy/Stack'
 import Typography from '@mui/joy/Typography'
 import { animated, SpringValue } from '@react-spring/web'
 
@@ -12,6 +13,7 @@ import { Project } from '~/types'
 import FeaturedIcon from './FeaturedIcon'
 import ProjectImage from './ProjectImage'
 import ReadMoreButton from './ReadMoreButton'
+import TechnologyIcon from './TechnologyIcon'
 import ViewSourceButton from './ViewSourceButton'
 
 interface ProjectCardProps {
@@ -47,7 +49,15 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
               {project.duration}
             </Typography>
           </Box>
-          <Typography level="body-sm">{project.description}</Typography>
+          <Typography level="body-sm" sx={{ flexGrow: 1 }}>
+            {project.description}
+          </Typography>
+          <Divider sx={{ my: 1 }} />
+          <Stack alignItems="center" direction="row" spacing={1}>
+            {project.technologies.map((technology) => (
+              <TechnologyIcon technology={technology} />
+            ))}
+          </Stack>
         </CardContent>
         <CardOverflow variant="soft">
           <Divider inset="context" />

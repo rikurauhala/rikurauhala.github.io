@@ -20,3 +20,4 @@ A collection of useful resources.
     - [Laptop](https://mockuper.net/mockup/6UsieT-qo/macbook-pro-16) (`1440x900`)
     - [Laptop + phone](https://mockuper.net/mockup/1777/multiple-devices) (`1440x900`, `750x1334`)
     - [Phone](https://mockuper.net/mockup/EwXUHw67B/oppo-find-x5-pro) (`1440x3216`)
+- [React icons](https://react-icons.github.io/react-icons)

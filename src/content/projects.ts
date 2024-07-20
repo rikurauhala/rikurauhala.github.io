@@ -14,16 +14,6 @@ export const projects: Project[] = [
     featured: false,
   },
   {
-    key: 'insights',
-    image: 'insights.png',
-    background: getLinearGradient(colors.teal, colors.blue),
-    name: 'Insights',
-    duration: 'Apr 2024 - Present',
-    description: 'An interactive web application for visualizing GitHub data',
-    repository: 'rikurauhala/insights',
-    featured: true,
-  },
-  {
     key: 'oodikone',
     image: 'oodikone.png',
     background: getLinearGradient(colors.red, colors.pink),
@@ -31,6 +21,16 @@ export const projects: Project[] = [
     duration: 'Jan 2024 - Present',
     description: 'A full stack web application for analyzing university data',
     repository: 'UniversityOfHelsinkiCS/oodikone',
+    featured: true,
+  },
+  {
+    key: 'insights',
+    image: 'insights.png',
+    background: getLinearGradient(colors.teal, colors.blue),
+    name: 'Insights',
+    duration: 'Apr 2024 - Jun 2024',
+    description: 'An interactive web application for visualizing GitHub data',
+    repository: 'rikurauhala/insights',
     featured: true,
   },
   {

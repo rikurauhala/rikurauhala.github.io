@@ -52,7 +52,7 @@ export const projects: Project[] = [
     duration: 'Aug 2023 - Dec 2023',
     description:
       "A bachelor's thesis in computer science on the topic of cracking cryptographic hashes of passwords",
-    repository: 'rikurauhala/kandi',
+    repository: 'rikurauhala/bsc-thesis',
     featured: true,
   },
   {

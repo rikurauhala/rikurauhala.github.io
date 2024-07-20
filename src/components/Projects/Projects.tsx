@@ -3,6 +3,7 @@ import Stack from '@mui/joy/Stack'
 import { useTrail } from '@react-spring/web'
 import { useState } from 'react'
 
+import Section from '~/components/Section'
 import { projects } from '~/content/projects'
 import SearchBar from './SearchBar'
 import ShowAllButton from './ShowAllButton'
@@ -22,6 +23,7 @@ const Projects = (): JSX.Element => {
 
   return (
     <>
+      <Section content="Here are some of the projects I've worked on." title="Projects" />
       <Stack direction="row" gap={2}>
         <SearchBar />
         <ShowAllButton showAll={showAll} setShowAll={setShowAll} />

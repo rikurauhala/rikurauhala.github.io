@@ -8,7 +8,6 @@ export interface InfoItem {
 export interface Project {
   key: string
   image?: string
-  background: string
   name: string
   duration: string
   description: string

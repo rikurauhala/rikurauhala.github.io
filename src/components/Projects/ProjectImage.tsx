@@ -2,17 +2,19 @@ import ImageIcon from '@mui/icons-material/Image'
 import Box from '@mui/joy/Box'
 
 import { Project } from '~/types'
+import { getLinearGradient } from '~/utils/color'
 
 interface ProjectImageProps {
+  index: number
   project: Project
 }
 
-const ProjectImage = ({ project }: ProjectImageProps): JSX.Element => {
+const ProjectImage = ({ index, project }: ProjectImageProps): JSX.Element => {
   return (
     <Box
       sx={{
         alignItems: 'center',
-        background: project.background,
+        background: getLinearGradient(index),
         display: 'flex',
         justifyContent: 'center',
       }}

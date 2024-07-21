@@ -26,7 +26,12 @@ const Projects = (): JSX.Element => {
       <Section content={content} title="Projects" />
       <Grid container spacing={2}>
         {trail.map((style, index) => (
-          <ProjectCard key={projects[index].key} project={projects[index]} style={style} />
+          <ProjectCard
+            index={index}
+            key={projects[index].key}
+            project={projects[index]}
+            style={style}
+          />
         ))}
       </Grid>
     </>

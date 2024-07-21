@@ -1,11 +1,9 @@
 import { Project } from '~/types'
-import { colors, getLinearGradient } from '~/utils/color'
 
 export const projects: Project[] = [
   {
     key: 'oodikone',
     image: 'oodikone.png',
-    background: getLinearGradient(colors.red, colors.pink),
     name: 'Oodikone',
     duration: 'Jan 2024 - Present',
     description:
@@ -26,7 +24,6 @@ export const projects: Project[] = [
   {
     key: 'rauhala-io',
     image: 'rauhala-io.png',
-    background: getLinearGradient(colors.amber, colors.orange),
     name: 'rauhala.io',
     duration: 'Jun 2024 - Jul 2024',
     description: 'A personal website showcasing my projects and skills',
@@ -37,7 +34,6 @@ export const projects: Project[] = [
   {
     key: 'insights',
     image: 'insights.png',
-    background: getLinearGradient(colors.teal, colors.blue),
     name: 'Insights',
     duration: 'Apr 2024 - Jun 2024',
     description: 'An interactive web application for visualizing GitHub data',
@@ -48,7 +44,6 @@ export const projects: Project[] = [
   {
     key: 'seminar-paper',
     image: 'seminar-paper.png',
-    background: getLinearGradient(colors.purple, colors.deepPurple),
     name: 'Seminar paper',
     duration: 'Jan 2024 - Apr 2024',
     description:
@@ -60,7 +55,6 @@ export const projects: Project[] = [
   {
     key: 'bsc-thesis',
     image: 'bsc-thesis.png',
-    background: getLinearGradient(colors.purple, colors.deepPurple),
     name: "Bachelor's thesis",
     duration: 'Aug 2023 - Dec 2023',
     description:
@@ -72,7 +66,6 @@ export const projects: Project[] = [
   {
     key: 'hack-this',
     image: 'hack-this.png',
-    background: getLinearGradient(colors.green, colors.lightGreen),
     name: 'Hack This',
     duration: 'Jul 2023 - Aug 2023',
     description: 'A full stack web application demonstrating common security vulnerabilities',
@@ -83,7 +76,6 @@ export const projects: Project[] = [
   {
     key: 'berry-picker-tracker',
     image: 'berry-picker-tracker.png',
-    background: getLinearGradient(colors.indigo, colors.blue),
     name: 'Berry Picker Tracker',
     duration: 'Jan 2023 - May 2023',
     description:
@@ -95,7 +87,6 @@ export const projects: Project[] = [
   {
     key: '0b-is',
     image: '0b-is.png',
-    background: getLinearGradient(colors.grey, colors.blueGrey),
     name: '0b.is',
     duration: 'Dec 2022 - Feb 2023',
     description:
@@ -107,7 +98,6 @@ export const projects: Project[] = [
   {
     key: 'you.github.io',
     image: 'you-github-io.png',
-    background: getLinearGradient(colors.grey, colors.blueGrey),
     name: 'you.github.io',
     duration: 'Jan 2022 - Dec 2022',
     description:
@@ -119,7 +109,6 @@ export const projects: Project[] = [
   {
     key: 'minitex',
     image: 'minitex.png',
-    background: getLinearGradient(colors.grey, colors.blueGrey),
     name: 'Minitex',
     duration: 'Nov 2022 - Dec 2022',
     description:
@@ -131,7 +120,6 @@ export const projects: Project[] = [
   {
     key: 'rsa',
     image: 'rsa.png',
-    background: getLinearGradient(colors.orange, colors.deepOrange),
     name: 'RSA',
     duration: 'Sep 2022 - Oct 2022',
     description: 'An implementation of the RSA cryptosystem with a command-line interface',
@@ -142,7 +130,6 @@ export const projects: Project[] = [
   {
     key: 'yesan',
     image: 'yesan.png',
-    background: getLinearGradient(colors.yellow, colors.amber),
     name: 'Yesan',
     duration: 'Mar 2022 - May 2022',
     description: 'A GUI desktop application for managing personal finances',
@@ -153,7 +140,6 @@ export const projects: Project[] = [
   {
     key: 'tj-bot',
     image: 'tj-bot.png',
-    background: getLinearGradient(colors.blue, colors.lightBlue),
     name: 'TJ-bot',
     duration: 'Jun 2021 - Sep 2021',
     description:
@@ -165,7 +151,6 @@ export const projects: Project[] = [
   {
     key: 'film-review-app',
     image: 'film-review-app.png',
-    background: getLinearGradient(colors.teal, colors.cyan),
     name: 'Film Review App',
     duration: 'Mar 2021 - Jun 2021',
     description: 'A full stack web application for reading and writing film reviews',

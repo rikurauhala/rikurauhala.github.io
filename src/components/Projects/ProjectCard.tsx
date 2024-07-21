@@ -17,6 +17,7 @@ import TechnologyIcon from './TechnologyIcon'
 import ViewSourceButton from './ViewSourceButton'
 
 interface ProjectCardProps {
+  index: number
   project: Project
   style: {
     opacity: SpringValue<number>
@@ -24,7 +25,7 @@ interface ProjectCardProps {
   }
 }
 
-const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
+const ProjectCard = ({ index, project, style }: ProjectCardProps): JSX.Element => {
   const AnimatedCard = animated(Card)
 
   return (
@@ -37,7 +38,7 @@ const ProjectCard = ({ project, style }: ProjectCardProps): JSX.Element => {
         <CardOverflow>
           <AspectRatio ratio="2">
             {project.featured && <FeaturedIcon />}
-            <ProjectImage project={project} />
+            <ProjectImage index={index} project={project} />
           </AspectRatio>
         </CardOverflow>
         <CardContent sx={{ flexGrow: 1 }}>

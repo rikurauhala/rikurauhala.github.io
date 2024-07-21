@@ -44,6 +44,20 @@ export const colors = {
   yellow: yellow[level],
 }
 
-export const getLinearGradient = (color1: string, color2: string): string => {
+const gradients = [
+  [colors.deepPurple, colors.indigo],
+  [colors.indigo, colors.blue],
+  [colors.blue, colors.lightBlue],
+  [colors.lightBlue, colors.cyan],
+  [colors.cyan, colors.teal],
+  [colors.teal, colors.cyan],
+  [colors.cyan, colors.lightBlue],
+  [colors.lightBlue, colors.blue],
+  [colors.blue, colors.indigo],
+  [colors.indigo, colors.deepPurple],
+]
+
+export const getLinearGradient = (index: number): string => {
+  const [color1, color2] = gradients[index % gradients.length]
   return `linear-gradient(90deg, ${color1} 0%, ${color2} 80%)`
 }

@@ -31,7 +31,7 @@ export const aboutItems: InfoItem[] = [
   },
 ]
 
-export const onlineItems = [
+export const onlineItems: InfoItem[] = [
   {
     key: 'gitHub',
     icon: <GitHubIcon />,

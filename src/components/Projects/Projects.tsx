@@ -1,40 +1,32 @@
 import Grid from '@mui/joy/Grid'
-import Stack from '@mui/joy/Stack'
 import { useTrail } from '@react-spring/web'
-import { useState } from 'react'
 
 import Section from '~/components/Section'
 import { projects } from '~/content/projects'
-import SearchBar from './SearchBar'
-import ShowAllButton from './ShowAllButton'
 import ProjectCard from './ProjectCard'
 
 const Projects = (): JSX.Element => {
-  const [showAll, setShowAll] = useState(false)
-
-  const filteredProjects = showAll ? projects : projects.filter((project) => project.featured)
-
-  const trail = useTrail(filteredProjects.length, {
+  const trail = useTrail(projects.length, {
     from: { opacity: 0, transform: 'translate3d(0,40px,0)' },
     to: { opacity: 1, transform: 'translate3d(0,0px,0)' },
     delay: 200,
     config: { mass: 1, tension: 120, friction: 14 },
   })
 
+  const content = `
+    Here are some of the projects I have worked on over the years. Most recent projects are displayed
+    first and the very best of them are marked as featured.
+
+
+    All projects are authored by me, unless specified otherwise.
+  `
+
   return (
     <>
-      <Section content="Here are some of the projects I've worked on." title="Projects" />
-      <Stack direction="row" gap={2}>
-        <SearchBar />
-        <ShowAllButton showAll={showAll} setShowAll={setShowAll} />
-      </Stack>
+      <Section content={content} title="Projects" />
       <Grid container spacing={2}>
         {trail.map((style, index) => (
-          <ProjectCard
-            key={filteredProjects[index].key}
-            project={filteredProjects[index]}
-            style={style}
-          />
+          <ProjectCard key={projects[index].key} project={projects[index]} style={style} />
         ))}
       </Grid>
     </>

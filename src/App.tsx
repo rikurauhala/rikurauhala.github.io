@@ -4,6 +4,7 @@ import Stack from '@mui/joy/Stack'
 import { CssVarsProvider } from '@mui/joy/styles'
 
 import About from './components/About'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Info from './components/Info'
 import Projects from './components/Projects'
@@ -17,7 +18,7 @@ const App = (): JSX.Element => {
           <Info />
           <About />
           <Projects />
-          {/* Contact */}
+          <Contact />
           <Footer />
         </Stack>
       </Container>

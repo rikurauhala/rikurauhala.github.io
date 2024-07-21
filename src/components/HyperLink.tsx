@@ -1,3 +1,4 @@
+import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import Link from '@mui/joy/Link'
 
 interface HyperLinkProps {
@@ -6,7 +7,12 @@ interface HyperLinkProps {
 }
 
 const HyperLink = ({ href, text }: HyperLinkProps): JSX.Element => (
-  <Link href={href} rel="noopener noreferrer" target="_blank">
+  <Link
+    endDecorator={<OpenInNewIcon sx={{ fontSize: 13 }} />}
+    href={href}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
     {text}
   </Link>
 )

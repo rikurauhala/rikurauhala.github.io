@@ -9,6 +9,7 @@
   "scripts": {
     "build": "tsc -b && vite build",
     "dev": "vite",
+    "deploy": "gh-pages -d dist",
     "format": "prettier --write .",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -35,6 +36,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.3.2",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"

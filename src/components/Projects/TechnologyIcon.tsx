@@ -138,7 +138,7 @@ const TechnologyIcon = ({ technology }: TechnologyIconProps): JSX.Element | null
   const { name, icon, color } = technologies[technology]
 
   return (
-    <Tooltip key={technology} title={name}>
+    <Tooltip arrow enterTouchDelay={0} key={technology} title={name}>
       <Box color={color}>{icon}</Box>
     </Tooltip>
   )

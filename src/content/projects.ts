@@ -8,7 +8,8 @@ export const projects: Project[] = [
     background: getLinearGradient(colors.red, colors.pink),
     name: 'Oodikone',
     duration: 'Jan 2024 - Present',
-    description: 'A full stack web application for analyzing university data',
+    description:
+      'A full stack web application for analyzing university data | Authored by Toska, University of Helsinki',
     technologies: [
       'javascript',
       'typescript',
@@ -86,7 +87,7 @@ export const projects: Project[] = [
     name: 'Berry Picker Tracker',
     duration: 'Jan 2023 - May 2023',
     description:
-      'A full stack mobile application for preventing berry pickers from getting lost in the forest',
+      'A mobile application for preventing berry pickers from getting lost in the forest | Authored by the Marjanpoimijat team',
     technologies: ['python', 'postgres', 'docker', 'typescript', 'reactnative'],
     repository: 'marjanpoimijat',
     featured: true,
@@ -102,6 +103,30 @@ export const projects: Project[] = [
     technologies: ['typescript', 'react', 'mui'],
     repository: 'rikurauhala/0b.is',
     featured: true,
+  },
+  {
+    key: 'you.github.io',
+    image: 'you-github-io.png',
+    background: getLinearGradient(colors.grey, colors.blueGrey),
+    name: 'you.github.io',
+    duration: 'Jan 2022 - Dec 2022',
+    description:
+      'A portfolio website template for developers to showcase their projects and skills',
+    technologies: ['typescript', 'github', 'react', 'mui'],
+    repository: 'rikurauhala/you.github.io',
+    featured: false,
+  },
+  {
+    key: 'minitex',
+    image: 'minitex.png',
+    background: getLinearGradient(colors.grey, colors.blueGrey),
+    name: 'Minitex',
+    duration: 'Nov 2022 - Dec 2022',
+    description:
+      'A command-line application for managing academic references | Authored by the Minitex team',
+    technologies: ['python'],
+    repository: 'rikurauhala/minitex',
+    featured: false,
   },
   {
     key: 'rsa',

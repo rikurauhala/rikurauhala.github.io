@@ -1,7 +1,7 @@
 {
   "name": "rauhala.io",
   "description": "My personal website",
-  "author": "Riku Rauhala <riku@rauhala.io>",
+  "author": "Riku Rauhala",
   "homepage": "https://github.com/rikurauhala/rikurauhala.github.io",
   "private": true,
   "version": "0.0.0",
@@ -21,11 +21,13 @@
     "@mui/icons-material": "^5.15.15",
     "@mui/joy": "^5.0.0-beta.36",
     "@react-spring/web": "^9.7.3",
+    "he": "^1.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1"
   },
   "devDependencies": {
+    "@types/he": "^1.2.3",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",

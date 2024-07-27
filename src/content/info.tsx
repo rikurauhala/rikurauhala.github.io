@@ -4,6 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import PlaceIcon from '@mui/icons-material/Place'
 import SchoolIcon from '@mui/icons-material/School'
 import WorkIcon from '@mui/icons-material/Work'
+import he from 'he'
 
 import HyperLink from '~/components/HyperLink'
 import { InfoItem } from '~/types'
@@ -31,6 +32,31 @@ export const aboutItems: InfoItem[] = [
   },
 ]
 
+const letters = [
+  '&#x6D;',
+  '&#x61;',
+  '&#x69;',
+  '&#x6C;',
+  '&#x74;',
+  '&#x6F;',
+  '&#x3A;',
+  '&#x72;',
+  '&#x69;',
+  '&#x6B;',
+  '&#x75;',
+  '&#x40;',
+  '&#x72;',
+  '&#x61;',
+  '&#x75;',
+  '&#x68;',
+  '&#x61;',
+  '&#x6C;',
+  '&#x61;',
+  '&#x2E;',
+  '&#x69;',
+  '&#x6F;',
+]
+
 export const onlineItems: InfoItem[] = [
   {
     key: 'gitHub',
@@ -48,6 +74,6 @@ export const onlineItems: InfoItem[] = [
     key: 'email',
     icon: <EmailIcon />,
     title: 'Email',
-    value: <HyperLink href="mailto:" text="to be added" />,
+    value: <HyperLink href={he.decode(letters.join(''))} text="click to send" />,
   },
 ]

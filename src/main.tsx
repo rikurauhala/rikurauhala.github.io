@@ -1,4 +1,4 @@
-import '@fontsource/inter'
+import '@fontsource/inter/latin-400.css'
 
 import ReactDOM from 'react-dom/client'
 

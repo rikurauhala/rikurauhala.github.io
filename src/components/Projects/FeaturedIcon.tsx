@@ -14,7 +14,7 @@ const FeaturedIcon = (): JSX.Element => {
         margin: 1,
       }}
     >
-      <Chip startDecorator={<StarOutlineIcon />} sx={{ color: colors.amber }}>
+      <Chip endDecorator={<StarOutlineIcon />} sx={{ color: colors.amber }}>
         Featured
       </Chip>
     </Box>

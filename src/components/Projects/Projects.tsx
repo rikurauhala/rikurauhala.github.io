@@ -9,7 +9,7 @@ const Projects = (): JSX.Element => {
   const trail = useTrail(projects.length, {
     from: { opacity: 0, transform: 'translate3d(0,40px,0)' },
     to: { opacity: 1, transform: 'translate3d(0,0px,0)' },
-    delay: 200,
+    delay: 100,
     config: { mass: 1, tension: 120, friction: 14 },
   })
 

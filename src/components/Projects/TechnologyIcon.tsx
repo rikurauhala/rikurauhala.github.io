@@ -30,7 +30,7 @@ const technologies: Record<string, IconDetails> = {
   css: {
     name: 'CSS',
     icon: <SiCss3 />,
-    color: '#563D7C',
+    color: '#2196F3',
   },
   cypress: {
     name: 'Cypress',

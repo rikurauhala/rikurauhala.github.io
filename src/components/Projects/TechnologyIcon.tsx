@@ -35,7 +35,7 @@ const technologies: Record<string, IconDetails> = {
   cypress: {
     name: 'Cypress',
     icon: <SiCypress />,
-    color: '#5dd1a1',
+    color: '#5DD1A1',
   },
   discord: {
     name: 'Discord API',

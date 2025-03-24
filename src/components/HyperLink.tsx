@@ -6,7 +6,7 @@ interface HyperLinkProps {
   text: string
 }
 
-const HyperLink = ({ href, text }: HyperLinkProps): JSX.Element => (
+const HyperLink = ({ href, text }: HyperLinkProps) => (
   <Link
     endDecorator={<OpenInNewIcon sx={{ fontSize: 13 }} />}
     href={href}

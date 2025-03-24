@@ -6,7 +6,7 @@ interface SectionProps {
   title: string
 }
 
-const Section = ({ content, title }: SectionProps): JSX.Element => {
+const Section = ({ content, title }: SectionProps) => {
   return (
     <Card>
       <Typography component="h2" level="title-lg">

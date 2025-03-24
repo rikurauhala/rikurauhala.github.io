@@ -2,7 +2,7 @@ import Box from '@mui/joy/Box'
 import Button from '@mui/joy/Button'
 import Tooltip from '@mui/joy/Tooltip'
 
-const ReadMoreButton = (): JSX.Element => {
+const ReadMoreButton = () => {
   return (
     <Tooltip arrow followCursor placement="top" title="Coming soon">
       <Box sx={{ flex: 1 }}>

@@ -8,7 +8,7 @@ interface InfoItemsProps {
   items: InfoItem[]
 }
 
-const InfoItems = ({ items }: InfoItemsProps): JSX.Element => {
+const InfoItems = ({ items }: InfoItemsProps) => {
   return (
     <Box>
       {items.map(({ key, icon, title, value }) => (

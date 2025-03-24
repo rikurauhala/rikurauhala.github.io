@@ -5,7 +5,7 @@ import Section from '~/components/Section'
 import { projects } from '~/content/projects'
 import ProjectCard from './ProjectCard'
 
-const Projects = (): JSX.Element => {
+const Projects = () => {
   const trail = useTrail(projects.length, {
     from: { opacity: 0, transform: 'translate3d(0,40px,0)' },
     to: { opacity: 1, transform: 'translate3d(0,0px,0)' },

@@ -130,7 +130,7 @@ interface TechnologyIconProps {
   technology: Technology
 }
 
-const TechnologyIcon = ({ technology }: TechnologyIconProps): JSX.Element | null => {
+const TechnologyIcon = ({ technology }: TechnologyIconProps) => {
   if (!technologies[technology]) {
     return null
   }

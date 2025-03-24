@@ -1,7 +1,7 @@
 import Section from '~/components/Section'
 import { about } from '~/content/about'
 
-const About = (): JSX.Element => {
+const About = () => {
   return <Section content={about} title="About" />
 }
 

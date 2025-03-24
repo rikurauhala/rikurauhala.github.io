@@ -25,7 +25,7 @@ interface ProjectCardProps {
   }
 }
 
-const ProjectCard = ({ index, project, style }: ProjectCardProps): JSX.Element => {
+const ProjectCard = ({ index, project, style }: ProjectCardProps) => {
   const AnimatedCard = animated(Card)
 
   return (

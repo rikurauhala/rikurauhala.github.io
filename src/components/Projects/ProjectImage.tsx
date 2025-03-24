@@ -9,7 +9,7 @@ interface ProjectImageProps {
   project: Project
 }
 
-const ProjectImage = ({ index, project }: ProjectImageProps): JSX.Element => {
+const ProjectImage = ({ index, project }: ProjectImageProps) => {
   return (
     <Box
       sx={{

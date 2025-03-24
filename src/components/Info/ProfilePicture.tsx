@@ -1,6 +1,6 @@
 import Avatar from '@mui/joy/Avatar'
 
-const ProfilePicture = (): JSX.Element => {
+const ProfilePicture = () => {
   const size = '150px'
 
   return (

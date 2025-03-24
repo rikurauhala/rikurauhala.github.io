@@ -4,7 +4,7 @@ import Chip from '@mui/joy/Chip'
 
 import { colors } from '~/utils/color'
 
-const FeaturedIcon = (): JSX.Element => {
+const FeaturedIcon = () => {
   return (
     <Box
       sx={{

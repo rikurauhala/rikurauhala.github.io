@@ -4,7 +4,7 @@ import Stack from '@mui/joy/Stack'
 import HyperLink from '~/components/HyperLink'
 import { authorUrl, licenseUrl, sourceUrl } from '~/content/footer'
 
-const Footer = (): JSX.Element => {
+const Footer = () => {
   const items = [
     { key: 'author', text: 'Author', url: authorUrl },
     { key: 'source', text: 'Source code', url: sourceUrl },

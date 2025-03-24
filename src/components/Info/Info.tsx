@@ -7,7 +7,7 @@ import { aboutItems, name, onlineItems } from '~/content/info'
 import InfoItems from './InfoItems'
 import ProfilePicture from './ProfilePicture'
 
-const Info = (): JSX.Element => {
+const Info = () => {
   return (
     <Card>
       <Stack

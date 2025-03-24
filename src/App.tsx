@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import Info from './components/Info'
 import Projects from './components/Projects'
 
-const App = (): JSX.Element => {
+const App = () => {
   return (
     <CssVarsProvider defaultMode="dark">
       <CssBaseline />

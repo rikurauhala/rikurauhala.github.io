@@ -1,10 +1,6 @@
 import Button from '@mui/joy/Button'
 
-interface ViewSourceButtonProps {
-  repository: string
-}
-
-const ViewSourceButton = ({ repository }: ViewSourceButtonProps) => {
+const ViewSourceButton = ({ repository }: { repository: string }) => {
   return (
     <Button
       color="neutral"

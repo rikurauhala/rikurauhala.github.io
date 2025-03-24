@@ -126,11 +126,7 @@ const technologies: Record<string, IconDetails> = {
 
 type Technology = keyof typeof technologies
 
-interface TechnologyIconProps {
-  technology: Technology
-}
-
-const TechnologyIcon = ({ technology }: TechnologyIconProps) => {
+const TechnologyIcon = ({ technology }: { technology: Technology }) => {
   if (!technologies[technology]) {
     return null
   }

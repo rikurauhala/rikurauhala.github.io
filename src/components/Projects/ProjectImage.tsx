@@ -4,12 +4,7 @@ import Box from '@mui/joy/Box'
 import { Project } from '~/types'
 import { getLinearGradient } from '~/utils/color'
 
-interface ProjectImageProps {
-  index: number
-  project: Project
-}
-
-const ProjectImage = ({ index, project }: ProjectImageProps) => {
+const ProjectImage = ({ index, project }: { index: number; project: Project }) => {
   return (
     <Box
       sx={{

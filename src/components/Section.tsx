@@ -1,12 +1,7 @@
 import Card from '@mui/joy/Card'
 import Typography from '@mui/joy/Typography'
 
-interface SectionProps {
-  content: string
-  title: string
-}
-
-const Section = ({ content, title }: SectionProps) => {
+const Section = ({ content, title }: { content: string; title: string }) => {
   return (
     <Card>
       <Typography component="h2" level="title-lg">

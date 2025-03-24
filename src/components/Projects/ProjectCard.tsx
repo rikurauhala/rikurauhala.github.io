@@ -16,16 +16,18 @@ import ReadMoreButton from './ReadMoreButton'
 import TechnologyIcon from './TechnologyIcon'
 import ViewSourceButton from './ViewSourceButton'
 
-interface ProjectCardProps {
+const ProjectCard = ({
+  index,
+  project,
+  style,
+}: {
   index: number
   project: Project
   style: {
     opacity: SpringValue<number>
     transform: SpringValue<string>
   }
-}
-
-const ProjectCard = ({ index, project, style }: ProjectCardProps) => {
+}) => {
   const AnimatedCard = animated(Card)
 
   return (

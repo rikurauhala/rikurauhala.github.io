@@ -4,11 +4,7 @@ import Typography from '@mui/joy/Typography'
 
 import { InfoItem } from '~/types'
 
-interface InfoItemsProps {
-  items: InfoItem[]
-}
-
-const InfoItems = ({ items }: InfoItemsProps) => {
+const InfoItems = ({ items }: { items: InfoItem[] }) => {
   return (
     <Box>
       {items.map(({ key, icon, title, value }) => (

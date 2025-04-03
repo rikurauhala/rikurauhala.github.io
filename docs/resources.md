@@ -21,3 +21,4 @@ A collection of useful resources.
     - [Laptop + phone](https://mockuper.net/mockup/1777/multiple-devices) (`1440x900`, `750x1334`)
     - [Phone](https://mockuper.net/mockup/EwXUHw67B/oppo-find-x5-pro) (`1440x3216`)
 - [React icons](https://react-icons.github.io/react-icons)
+- [Qlty](https://docs.qlty.sh/what-is-qlty)

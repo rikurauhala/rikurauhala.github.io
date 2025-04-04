@@ -41,17 +41,6 @@ exclude_patterns = [
   "**/assets/**",
 ]
 
-test_patterns = [
-  "**/test/**",
-  "**/spec/**",
-  "**/*.test.*",
-  "**/*.spec.*",
-  "**/*_test.*",
-  "**/*_spec.*",
-  "**/test_*.*",
-  "**/spec_*.*",
-]
-
 [smells]
 mode = "comment"
 

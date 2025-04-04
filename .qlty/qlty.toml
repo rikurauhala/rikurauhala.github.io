@@ -60,16 +60,10 @@ name = "default"
 default = true
 
 [[plugin]]
-name = "checkov"
-
-[[plugin]]
 name = "eslint"
 version = "8.57.0"
 package_file = "package.json"
 package_filters = ["eslint", "prettier"]
-
-[[plugin]]
-name = "golangci-lint"
 
 [[plugin]]
 name = "markdownlint"

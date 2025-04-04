@@ -14,31 +14,10 @@
 config_version = "0"
 
 exclude_patterns = [
-  "*_min.*",
-  "*-min.*",
-  "*.min.*",
-  "**/*.d.ts",
-  "**/.yarn/**",
-  "**/bower_components/**",
-  "**/build/**",
-  "**/cache/**",
-  "**/config/**",
-  "**/db/**",
-  "**/deps/**",
   "**/dist/**",
-  "**/extern/**",
-  "**/external/**",
-  "**/generated/**",
-  "**/Godeps/**",
-  "**/gradlew/**",
-  "**/mvnw/**",
+  "**/docs/**",
   "**/node_modules/**",
-  "**/protos/**",
-  "**/seed/**",
-  "**/target/**",
-  "**/testdata/**",
-  "**/vendor/**",
-  "**/assets/**",
+  "**/public/**",
 ]
 
 [smells]

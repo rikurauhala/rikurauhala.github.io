@@ -19,6 +19,7 @@ export const projects: Project[] = [
       'semantic',
     ],
     repository: 'UniversityOfHelsinkiCS/oodikone',
+    readMore: 'https://toska.dev/projects/oodikone',
     featured: true,
   },
   {
@@ -29,6 +30,7 @@ export const projects: Project[] = [
     description: 'A personal website showcasing my projects and skills',
     technologies: ['typescript', 'react', 'joy'],
     repository: 'rikurauhala/rikurauhala.github.io',
+    readMore: 'https://rauhala.io',
     featured: false,
   },
   {
@@ -50,6 +52,7 @@ export const projects: Project[] = [
       'An academic seminar paper on the topic of implementing multi-factor authentication',
     technologies: ['latex'],
     repository: 'rikurauhala/seminar-paper',
+    readMore: 'https://github.com/rikurauhala/seminar-paper/blob/main/report.pdf',
     featured: false,
   },
   {
@@ -61,6 +64,7 @@ export const projects: Project[] = [
       "A bachelor's thesis in computer science on the topic of cracking cryptographic hashes of passwords",
     technologies: ['latex'],
     repository: 'rikurauhala/bsc-thesis',
+    readMore: 'https://github.com/rikurauhala/bsc-thesis/blob/main/thesis.pdf',
     featured: true,
   },
   {
@@ -82,6 +86,7 @@ export const projects: Project[] = [
       'A mobile application for preventing berry pickers from getting lost in the forest | Authored by the Marjanpoimijat team',
     technologies: ['python', 'postgres', 'docker', 'typescript', 'reactnative'],
     repository: 'marjanpoimijat',
+    readMore: 'https://marjanpoimijat.github.io',
     featured: true,
   },
   {

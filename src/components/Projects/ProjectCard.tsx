@@ -66,7 +66,7 @@ const ProjectCard = ({
           <Divider inset="context" />
           <CardContent orientation="horizontal" sx={{ display: 'flex', gap: 1, width: '100%' }}>
             <ViewSourceButton repository={project.repository} />
-            <ReadMoreButton />
+            <ReadMoreButton url={project.readMore} />
           </CardContent>
         </CardOverflow>
       </AnimatedCard>

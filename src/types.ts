@@ -13,5 +13,6 @@ export interface Project {
   description: string
   technologies: string[]
   repository: string
+  readMore?: string
   featured: boolean
 }

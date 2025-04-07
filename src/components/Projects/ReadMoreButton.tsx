@@ -1,16 +1,19 @@
-import Box from '@mui/joy/Box'
 import Button from '@mui/joy/Button'
-import Tooltip from '@mui/joy/Tooltip'
 
-const ReadMoreButton = () => {
+const ReadMoreButton = ({ url }: { url: string | undefined }) => {
   return (
-    <Tooltip arrow followCursor placement="top" title="Coming soon">
-      <Box sx={{ flex: 1 }}>
-        <Button color="primary" disabled fullWidth variant="solid">
-          Read more
-        </Button>
-      </Box>
-    </Tooltip>
+    <Button
+      color="primary"
+      component="a"
+      disabled={!url}
+      href={url}
+      sx={{ flex: 1 }}
+      rel="noopener noreferrer"
+      target="_blank"
+      variant="solid"
+    >
+      Read more
+    </Button>
   )
 }
 
